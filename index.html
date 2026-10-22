@@ -73,7 +73,7 @@ const SUPABASE_URL = 'https://zrwjkvdyyswcybfgvcaw.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_TY0tRQFdaT9IDgoDQeTmrw_bFhOZcii';
 const $ = id => document.getElementById(id);
 let supabaseClient, currentUser, currentProfile, selectedUser, realtimeChannel, authMode='login', profilesCache=[], activeGroup=null, groupRealtimeChannel=null, presenceTimer=null;
-const ADMIN_USER_ID = 'hrdjfcjgcjxjfcjftiidrudh';
+const ADMIN_USER_ID = 'dcf32a02-dc6a-4d24-bd53-7a3b527709f4';
 const COIN_START_BALANCE = 100;
 function walletKey(userId){return 'vectora_wallet_'+userId}
 function getCoins(userId){const n=Number(localStorage.getItem(walletKey(userId)));return Number.isFinite(n)&&n>=0?n:(userId===currentUser?.id?COIN_START_BALANCE:0)}
